@@ -1,0 +1,20 @@
+# Python / Jupyter
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.pyo
+
+# Sistem operasi
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment
+venv/
+.env/
+
+# Hasil eksperimen / model besar (jangan ikut ke git)
+*.pt
+*.bin
+results/
+gradio_cached/
