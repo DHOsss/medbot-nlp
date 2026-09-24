@@ -1,0 +1,5 @@
+pandas
+numpy
+scikit-learn
+nltk
+gradio==6.28.0

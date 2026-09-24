@@ -8,10 +8,20 @@ Proyek Praktikum NLP (Semester 3): chatbot tanya-jawab kesehatan berbahasa Indon
 
 - Dataset: 5.000 QnA medis bahasa Indonesia (Alodokter) dengan auto-kategorisasi 16 kategori
 - Preprocessing: lowercase, hapus stopwords (Indonesia + Inggris), lemmatization
-- Retrieval jawaban: TF-IDF (n-gram 1–2) + cosine similarity, atau Sentence-BERT
+- Retrieval jawaban: **hibrida Sentence-BERT + TF-IDF** (paraphrase-multilingual-MiniLM-L12-v2) + cosine similarity + keyword boost
 - Konteks percakapan (context-aware) & threshold "tidak yakin"
 - 2 tampilan UI: ipywidgets (di notebook) dan **Gradio** (web, `http://127.0.0.1:7860`)
 - Analisis dataset + evaluasi batch
+
+## 📊 Hasil Evaluasi
+
+| Metrik | Nilai |
+|---|---|
+| Retrieval Top-1 Accuracy (300 sampel) | **80.3%** |
+| Retrieval Top-3 Accuracy (300 sampel) | **94.0%** |
+| Uji skenario (13 kasus) | 11/13 (84.6%) |
+| SBERT murni (pembanding) | Top-1 20% |
+| TF-IDF murni (pembanding) | Top-1 76% |
 
 ## 📁 Struktur
 
